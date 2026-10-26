@@ -35,18 +35,6 @@ public:
         cout<<"Left Child: "<<root->right->left->name<<endl;
         cout<<"Right Child: "<<root->right->right->name<<endl;
     }
-
-    ~BinaryTree() {
-        delete root->left->left;
-        delete root->left->right;
-        delete root->right->left;
-        delete root->right->right;
-        delete root->left;
-        delete root->right;
-        delete root;
-    }
-};
-
 int main() {
     BinaryTree tree;
 
