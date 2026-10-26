@@ -53,10 +53,6 @@ public:
         root = NULL;
     }
 
-    ~BST() {
-        destroy(root);
-    }
-
     void insertValue(int value) {
         root = insert(root, value);
     }
